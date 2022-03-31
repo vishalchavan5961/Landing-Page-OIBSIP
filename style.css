@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Yuji+Syuku&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-bg-color: #64dce0;
+  }
+  
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Yuji Syuku', serif;
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    width: 100vw;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0px 25px;
+}
+/* li{display: inline;} */
+nav ul{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 27px;
+    width: 493px;
+    border-radius: 3px;
+    margin: 0 16px 0 56px;
+    border: .5px solid rgb(0, 0, 0);
+    padding: 0 10px;
+}
+.container{
+    min-height: calc(100vh - 10vh - 8vh);
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    /* margin: auto;
+    width: 80vw; */
+    margin: 6px auto;
+}
+.card{
+    max-width: 92vw;
+    margin: 50px auto;
+    
+}
+.card h2{
+    font-family: 'Yuji Syuku', serif;
+}
+.cards{
+    display: flex;
+    /* justify-content: center; */
+    overflow: hidden;
+}
+.carditem{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 11vw;
+    margin: 25px;
+
+}
+
+
+footer{
+    background-color:var(--main-bg-color);
+    color: white;
+    height: 10vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Yuji Syuku', serif;
+    
+}
+
+
+.block{
+    height: 10vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+form{
+    margin: 18px;
+}
+form p{
+    margin: 6px 145px;
+}
+form input ,textarea{
+    margin: 0px 25px;
+}
+form .btn{
+    margin: 10px 25px;
+}  
+form fieldset{
+    width: 35vw;
+}
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 0 12px 2px;
+    height: 29px;
+    background: var(--main-bg-color);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.my-1{
+    margin: 6px 0;
+}
+.my-2{
+    margin: 15px 0;
+}
+.text-center{
+    text-align: center;
+}
+@media screen and (max-width:1100px){
+    
+    nav{
+       flex-direction: column; 
+    }
+    .logo{
+        justify-content: center;
+        margin: 12px 0;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    .search{
+        justify-content: center;
+    }
+    .search input{
+        margin: 12px 16px;
+        height: 25px;
+        width: 194px;
+    }
+    .search button{
+        height: 26px;
+    }
+    .slider{
+        width: 80vw;
+        margin: 13px auto -25px;
+        height: 34vw;
+    }
+    .carditem img{
+        width: 90px;
+    }
+    .lines{
+        width: 70px;
+    }
+    .carditem{
+        width: 20vw;
+    }
+}
